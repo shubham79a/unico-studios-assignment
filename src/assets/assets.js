@@ -1,0 +1,28 @@
+import bg_image from "../../public/background_image.png"
+
+const img_1 = "https://s3-alpha-sig.figma.com/img/fe04/8856/3be0126769ae6f8908fc69d44094058f?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PnGpROUxMrdcNp0SC8kAaTJ4M2f26mPlYgD10dkJhJsDFvhaCkaVn8ioLUJC7-TMnVPV0RWeRQ4Yh5EGinvFuICnhzaz4MrtFChsP4uK~HDlssV2WbsJ7GC~V8Om2mqly9jljuqevz8s05zqQ5Z15oru~f3XcOIYIdCrXBpe1rpXCzE5iNkPrPCp7XPbMRf3vUnu-~62zYCsKykyNBP1A6865O90N-3QS8GO0TtjEdlddi1ycRU8NE8eKkPPL8buBMefcYyBZON~XHwF03~Kv8-niGyIqffWc4dMM9slE9f50VGs4CTGXiqzb8RlPo0xS7L4zbn-Tr053GYUjF0ziw__", img_2 = "https://s3-alpha-sig.figma.com/img/261b/203a/14a84d62b632bbff2a281db06d03271d?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=D-c83Ro3BJH15CBJAfEHttrNMfv-~uZqpilrdNk-fuG6-risPR6SzBeH295pTKQc1JDgGcaOx7vTOYvisWPHbKh9KYckxNJ757uLcxxtZYlTHqYHnQ~1oWPInaeqGBrWAiEpIVlf3DvoKMEowWjJ~1P8cMVfSaQPyFxErfItBwJ1oaPuB5DKEqNBiw2SvtK~aCNEGnaSLkuivfuTn3zOgxxYZJGelPDW2YbIgRG6vjECFK1IWKDzAjBi~YLApGAqNZkEj-P3K9eoldA9SuEsSTWP3ta8MGUl1cFg3GtHciyYzbVEmVaaP32sRgxkkrW9Nlmh1HJh6LIpCzkwIJ1zFw__"
+const img_3 = "https://s3-alpha-sig.figma.com/img/b928/7558/4bb4db500f87c37a2e1362f1cd71a838?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=WGKFo~kIMAQxUllyi4VrroP8y6QdfMtwFNwO1fGVy5sEkGmHDWR9QfH8EeGyrSl9iJ0DaegGnK0nC9gn7tQtIeQiDzg5aJfx3bbGm7WCFde3AeyTqOmfH90swKWB1A8CdPp92wWtibjH2evaGZfA9GoOIyqbyTeySz6096ePweVKjoW2gaIIRXSS8XRxWDVm47CW7uk0-rocw0Xrbp9LcMGGpx1HvtEZZkSbmcjTJ4AFdvJaMK669yA5gdTjEfUzS234jZqk9K-NnQ19UUKnn-2TCNIzNWx2a5DzYFPrcwZUXCqkLpj6ISI8pQ7KxSysMiEkdteUa5TXdhwAxoRvjQ__"
+const img_4 = "https://s3-alpha-sig.figma.com/img/5465/945a/6ab7eb8504ebdcc4d401b3856a8d2272?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FHFpKCAqIypDyHDlf2VwZcGX7~yNJvxxE4Y-g1rQinUrkpEKGtd37LDKkoprVSWfHCvnCSlJu7PrvAPW1RS-wtZP7jyNYCR118uQTfkzv8uCX206NvUlIvc8ki7KanF48uFKz4suGJ8lW1Fu4R0bVpxdR-govwVNlE9C3JVreuI1hmVamGdtbxJlimxNj8RF8PE4NYUzpgNArhwrKWSC9ZCr99rvCwx5o8cdVI2LYVrlZqHlZkvzeEdm9c3GlowSNP67vHfjnHp3cLcUfKVnjXETshkc4FPr4fVexWe28YFE0YkPkW5YTBwR0Nxvi4jYN0iKbTV3DAeIjqsBRJrxmw__"
+const img_5 = "https://s3-alpha-sig.figma.com/img/68dc/f7e1/0223d2c6d4d3ccdd780db23786336b3d?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=RtSuJAz149mT2VRX7Mik9PPXZWwwb2g4USzKUtP61tD4gzLMADIqHyKxRavUQDIa2cwblpqRvI5SrvLI4NOpkAVESnFLGLEq~kHC5SynH-VxWhVLcm-nww1o38nbCiTgN1bHbfhbYGPoGhYqzJIVZLOkdmMzo4dg~L6Ua~pFvELvkwgcew~J-42W2SkBkGcMNFHLuwmepPnofXqD9a3uZyQZcZELr1AUfRFim-J6IxVa-sRpon4-~UdY7fIuDHEEAYGOfy6-tqsMpO~MVvQ6eEYpRp3j1IRf7HBQfqxAPxiV8rmSxOSlGmcUxN5LQpwPhe6RewNw5nWHkNLOQj31Bg__"
+const img_6 = "https://s3-alpha-sig.figma.com/img/4bcc/34ce/a68618caf8a6c1c58ab9116483390a44?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dLW3IHQ3kOn7TsknYXkVrEUDNAiZqeKdsK-mvwrDVDhNT30Wwcb0ham4VtpKXMQsdfkh8yQuoMlm6TqrFm2PkoCOxFYYCAHIG8cDDkgc8Fn5KNEG~hHDcAc4y8TNy75fkS324VAvM7XYTW~nPTQDy-7FazoprbBuh966XqJRGnV6adqZRZWLUaeAH1T0mn6ondJf8r8b4lYiHkjvMKr5bYriK0Jf5ub8zZo16Z-pwxZF2D5bYFqpOMlaELxEfrtuE4FQVaTp0agvQVmwL7JkD6byANrMWbC3vVGVK91U~p-vfBZQEgvEslC2jlikHpuRw7Q8FTiS77RAOBCBhGfcDw__"
+
+
+const logo_1 = "https://s3-alpha-sig.figma.com/img/01e6/b105/c7e29231137e8fad312d149bf7aac906?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ems2GMSSdWd~RAhUk6d03Xl1P4bxnfFU0~ddrs2rmbJThLLwSg8JiMaKzjMrRdNNmvhyfIqxkwXZtrQvdN~W3hj9FATmz~RTkAtjycqLMgqTJSYoyA~EEAP~0SEOJmPeISON3cTSeWr7d4htlgZ-xYeyHsVN9znfx8gUv~7ZnMvoraozLYH7XbKzeMXUcYiL~wt3SyoS83AQAEJDHjK6ryIB8gniyjKbqBRaui52GTFDSPP8MctsfwNrHQ7bEq-TFY2bJR8AzQ0FcJK8mm-aHPH~yAje3X~gS2ilzWXZkd5m47h2rLp3dDUKtfTK~4L8anxljJkEnI-libYUZ83jSg__"
+
+const assets = {
+    image_collection: [
+        img_1,
+        img_2,
+        img_3,
+        img_4,
+        img_5,
+        img_6,
+    ],
+    vision_image: "https://s3-alpha-sig.figma.com/img/79a4/a21e/bbaa474238ea74181d92ce72cdcdfdb1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=XacEc0bkhnfBBGQvo8615Qg61wZfV~M0pVikn3b-q5s2mlgIP6040DxDKv9E~rOJEhnj5kGsaLZtb02XjQg8M~ZGu8x5JnjE0Jb8kFboeg6ioTEEsOhhyol8Sm4-r3rOG9munwtwFbujhs7b~TpVleakd2~28a6XZdd5zrladSASYleZBa~7QsURvmwTNsoeXcb-IbWnfFMvh6Md9F2bWxJTv6r~keShYf8Os-VYGRyAZUauZddnnmxQfl6SuEOXQUz1-FfOp1J8t4NXsuWBPBZqThuYMtFF78n7zz13Tbgb5Mf1ZzCH3oOK2Q2aQkghC9bM0bI75IbsB~9qwQRP9A__",
+    background_image: bg_image,
+    logo_array: [
+logo_1
+    ]
+}
+
+export default assets;

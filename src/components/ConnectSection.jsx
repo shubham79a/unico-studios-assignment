@@ -1,8 +1,10 @@
 import React from 'react'
 import { Button } from './ui/button'
 import { ArrowBigLeft, ArrowBigRightDash } from 'lucide-react'
+import { useNavigate } from 'react-router-dom';
 
 const ConnectSection = () => {
+    const navigate = useNavigate();
     return (
         <div
             style={{
@@ -22,7 +24,7 @@ const ConnectSection = () => {
                         <p className='pb-4 text-sm tracking-wide leading-[1] font-normal'>WHETHER YOU'RE LAUNCHING A BRAND, TELLING A POWERFUL STORY, OR <br /> BUILDING AWARENESS—OUR CREW IS READY TO MAKE IT UNFORGETTABLE. <br />FROM CONCEPT TO CUT, WE’RE YOUR CREATIVE PARTNER EVERY STEP OF <br />THE WAY.</p>
                     </div>
                     <div>
-                        <Button variant={"outline"} className="bg-[#B886F6] rounded-full border-[#B886F6]">LET'S TALK <span> <ArrowBigRightDash /> </span></Button>
+                        <Button onClick={() => navigate("/contact-us")} variant={"outline"} className="bg-[#B886F6] rounded-full border-[#B886F6] hover:scale-105 transition-all duration-600 cursor-pointer">LET'S TALK <span> <ArrowBigRightDash /> </span></Button>
                     </div>
                 </div>
 

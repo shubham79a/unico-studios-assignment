@@ -13,6 +13,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { MenuIcon } from 'lucide-react'
+import { Link, NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -20,14 +21,14 @@ const Navbar = () => {
         <div className='bg-background/50 bg-[#2A2A2A66] sticky top-0 backdrop-blur border-b z-10 max-sm:px-4 sm:px-8 md:px-16 lg:px-20 py-4 overflow-hidden'>
             <div className=' flex justify-between items-center'>
                 <div>
-                    <p className='font-extrabold text-2xl text-white'>tnp</p>
+                    <Link to="/" className='font-extrabold text-3xl text-white'>tnp</Link>
                 </div>
                 <div className='max-sm:hidden'>
-                    <ul className='flex gap-4 items-center'>
-                        <li className='text-white font-bold'>HOME</li>
-                        <li className='text-white font-bold'>ABOUT US</li>
-                        <li className='text-white font-bold'>OUR WORK</li>
-                        <li className='text-white font-bold'>CONTACT US</li>
+                    <ul className='flex gap-4 items-center text-white'>
+                        <NavLink to="/" className={({ isActive }) => `font-bold ${isActive ? 'bg-[#B886F6] px-3.5 py-1 rounded-full' : ""}`}>HOME</NavLink>
+                        <NavLink to="/about-us" className={({ isActive }) => `font-bold ${isActive ? 'bg-[#B886F6] px-3.5 py-1 rounded-full' : ""}`}>ABOUT US</NavLink>
+                        <NavLink to="/our-work" className={({ isActive }) => `font-bold ${isActive ? 'bg-[#B886F6] px-3.5 py-1 rounded-full' : ""}`}>OUR WORK</NavLink>
+                        <NavLink to="/contact-us" className={({ isActive }) => `font-bold ${isActive ? 'bg-[#B886F6] px-3.5 py-1 rounded-full' : ""}`}>CONTACT US</NavLink>
                     </ul>
                 </div>
                 <div className='sm:hidden '>
@@ -41,13 +42,12 @@ const Navbar = () => {
                                 <SheetDescription>
                                 </SheetDescription>
                             </SheetHeader>
-                            <ul className='flex flex-col items-start gap-4'>
-                                <li className='text-white font-bold px-4'>HOME</li>
-                                <li className='text-white font-bold px-4'>ABOUT US</li>
-                                <li className='text-white font-bold px-4'>OUR WORK</li>
-                                <li className='text-white font-bold px-4'>CONTACT US</li>
+                            <ul className='flex flex-col items-start gap-4 px-6 text-white'>
+                                <NavLink to="/" className={({ isActive }) => `font-bold ${isActive ? 'bg-[#B886F6] px-3.5 py-1 rounded-full' : ""}`}>HOME</NavLink>
+                                <NavLink to="/about-us" className={({ isActive }) => `font-bold ${isActive ? 'bg-[#B886F6] px-3.5 py-1 rounded-full' : ""}`}>ABOUT US</NavLink>
+                                <NavLink to="/our-work" className={({ isActive }) => `font-bold ${isActive ? 'bg-[#B886F6] px-3.5 py-1 rounded-full' : ""}`}>OUR WORK</NavLink>
+                                <NavLink to="/contact-us" className={({ isActive }) => `font-bold ${isActive ? 'bg-[#B886F6] px-3.5 py-1 rounded-full' : ""}`}>CONTACT US</NavLink>
                             </ul>
-                            
                         </SheetContent>
                     </Sheet>
                 </div>

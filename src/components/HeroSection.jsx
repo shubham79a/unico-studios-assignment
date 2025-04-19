@@ -1,8 +1,10 @@
 import React from 'react'
 import { Button } from './ui/button'
 import { ArrowBigRightDash } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const HeroSection = () => {
+    const navigate = useNavigate();
     return (
         <div className=''>
             <div>
@@ -12,7 +14,7 @@ const HeroSection = () => {
             <div className='grid md:grid-cols-2 grid-cols-1 items-center max-sm:px-4 sm:px-16 md:px-24 lg:px-32 max-sm:py-12 sm:py-16 text-white'>
                 <div className=' max-md:pb-7'>
                     <p className='font-medium lg:text-6xl md:text-4xl text-3xl pb-3 leading-[1] tracking-normal'>ABOUT US</p>
-                    <Button variant={"outline"} className="bg-[#B886F6] rounded-full border-[#B886F6]">READ MORE <span><ArrowBigRightDash /></span></Button>
+                    <Button onClick={() => navigate("/our-work")} variant={"outline"} className="bg-[#B886F6] rounded-full border-[#B886F6] cursor-pointer hover:scale-105 transition-all duration-600">READ MORE <span><ArrowBigRightDash /></span></Button>
                 </div>
                 <div>
                     <p className='font-normal text-2xl'>We are team of passionate storytellers and skilled creators dedicated to producing exceptional commercial content. With a shared commitment to quality and innovation, we specialize in crafting compelling visuals that connect brands with their audiences.</p>

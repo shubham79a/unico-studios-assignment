@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 function Marqee({ imagesurls, direction }) {
   return (
-    <div className='flex w-full py-8  whitespace-nowrap overflow-hidden'>
+    <div className='flex w-full  whitespace-nowrap overflow-hidden'>
       <motion.div initial={{ x: direction === 'left' ? '0' : '-100%' }} animate={{ x: direction === 'left' ? '-100%' : '0' }} transition={{ ease: "linear", duration: 15, repeat: Infinity }}
         className='flex flex-shrink-0 gap-10 pl-10 '>
         {imagesurls.map((item, index) => <img key={index} src={item} alt='marqee' className='h-20 w-28' />)}
@@ -22,15 +22,15 @@ function BrandAdvertisement() {
       "https://s3-alpha-sig.figma.com/img/abed/b2ae/b705f7046939a538fe5d670e066e8efa?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=U4IH7J0HW1Qef9WCtEx-nDv7sVBHONG3543Ce7bdIuhNBYFGwZpECNN4xUm37P0S1Hj-6UoE2-b324FCcdaslByDMOmWwGXkEagpsHo44Gd3-EbDCwmCDVB8aH7~vaXEbS6j6yXWj3EpDRMXsdValOxEmgfTp1QeCRfisrvfl0MoOltSbqeZwJg7MM2SDbJkYpS~EcmAYHXMCezwQKIMPF5H8gTGVNWN6VUHj4GNuxvHLBi20evezuOH4tFQt2IC3QvH0NP5Mjk5g9R1WiKGRhXyfPdNCT6Szc1ksgOtC8kz~2IzxTjd-4MsspHjhR~f1nazUW3ilHBwFvFJjQTPYw__",
 
       "https://s3-alpha-sig.figma.com/img/c76d/bcdf/079e54862d988ecd43d10471d8d7456b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ksB3Kr41mBnxK~2g~5E11d8sI-L7eBmy7dDgDK8GYrIOiUf5D7KPoH3RJPEPEb517Xp2IE8MdOgLAZfJu70kL6eweXRel6H~Pmgee-1q9BXVJ6uFifri4UJwvRDsHwFsAG7-MFs23XKRLWIGjKClOZe8qZuSsqxZMr8Jqup1wSY2uOXWMEztDJLTfgFZ-4YoHkBH6~eCum-qJ4wpvyrpzr0k1WeGZMPZS-Y-5YGBXM~pCkFEgVA8fRmrZmgsaGFOxzCsNuj9ksQJmeIDptMzIgtgpx5KjQMKjuazPC1nJaKx96f0VVbL2yDwLZg2xPwooSnzNs75byzSFlPdp7njJg__",
-     
+
       "https://s3-alpha-sig.figma.com/img/9dac/e9c2/c1f3220069a999b1e11b8ffe034feae2?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=o7kk4TVfXKPnXcC-KFmxuwMAeRkJsXkZd1DGAQUxRusXoFw6oHz13l3QvURYjp3dU9vaMgzA3w3WJZwud0p0Ga6~hgwgXm5dXmxwYN-LHcsxjfFgcFNNGsd3jdxGtXq-N~q1kZQ7j4jr9zJyGrrMohismiD0nPK4CQQij2kALj64Df6D~zGLFOi6XTDS4I3AoXqmZaqmTdrNvlCmP16UPwob2kgm8zDUEInSYrWJ0KSVeJId6-2O16Lmbv4qUEp4AF-z8x3wTFedQKuU4Jyh3tnsNm5VsSiQho98IPhDYTyt0DhhJEc3sQG6OcjJI9LyYE60MRO~47MiSrpVmR32Rw__",
 
-"https://s3-alpha-sig.figma.com/img/b8e0/1b63/7cf3b3373e4fbf47f5d6bb2eff6cc211?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ajwkt6rb7SObqWARX~LQMY0NEIBbeTMazMLUpIT7EeGwNWjjsFHmtirshePv1OSeo054U4bIxVMUgw8TGcpqQncj7LpXogZy8UR5OaEfH3BP0RfJ6paSOFhnQbgIhB5HgloyhXzl-Dq50858wKMcNRQCdFnEn79MCDJtFY-gojK1wnGV4LhtKZXo22OS4CkkFjDGRK744upWQBbxC62NxkdSMfI-t9huRdePUecRCt6iwovWpoxqCWlP4fIEhPlKEQWDSNC8YjSJhO3KWzWeV7yw3nNG2A~6k8jpyIN62uOVg~n943zdZoRY7HUuHfoGV1ioegz~IQ2xLBn7j99b0A__",
+      "https://s3-alpha-sig.figma.com/img/b8e0/1b63/7cf3b3373e4fbf47f5d6bb2eff6cc211?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ajwkt6rb7SObqWARX~LQMY0NEIBbeTMazMLUpIT7EeGwNWjjsFHmtirshePv1OSeo054U4bIxVMUgw8TGcpqQncj7LpXogZy8UR5OaEfH3BP0RfJ6paSOFhnQbgIhB5HgloyhXzl-Dq50858wKMcNRQCdFnEn79MCDJtFY-gojK1wnGV4LhtKZXo22OS4CkkFjDGRK744upWQBbxC62NxkdSMfI-t9huRdePUecRCt6iwovWpoxqCWlP4fIEhPlKEQWDSNC8YjSJhO3KWzWeV7yw3nNG2A~6k8jpyIN62uOVg~n943zdZoRY7HUuHfoGV1ioegz~IQ2xLBn7j99b0A__",
 
     ],
   ]
   return (
-    <div className='py-12 w-full relative overflow-hidden bg-white'>
+    <div className='max-sm:py-3  sm:py-6 lg:py-12 w-full relative overflow-hidden bg-white'>
       {images.map((item, index) => <Marqee key={index} direction={index === 0 ? 'left' : 'right'} imagesurls={item} />)}
     </div>
   )

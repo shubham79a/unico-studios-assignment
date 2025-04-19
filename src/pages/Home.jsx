@@ -7,9 +7,7 @@ import ConnectSection from '../components/ConnectSection'
 
 const Home = () => {
   return (
-    <div className='cc'
-      
-    >
+    <div className='pb-80'>
       <HeroSection />
       <BrandAdvertisement />
       <ImageCollection />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -17,8 +17,22 @@ import { Link, NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
+    const [showGradient, setShowGradient] = useState(true);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setShowGradient(false);
+            } else {
+                setShowGradient(true);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <div className='bg-background/50 bg-[#2A2A2A66] sticky top-0 backdrop-blur border-b z-10 max-sm:px-4 sm:px-8 md:px-16 lg:px-20 py-4 overflow-hidden'>
+        <div className={`bg-background/50 bg-[#2A2A2A66] sticky top-0 backdrop-blur border-b z-10 max-sm:px-4 sm:px-8 md:px-16 lg:px-20 py-4 overflow-hidden ${showGradient ? 'bg-gradient-to-br from-45% to-[#B886F680]' : ''}`}>
             <div className=' flex justify-between items-center'>
                 <div>
                     <Link to="/" className='font-extrabold text-3xl text-white'>tnp</Link>

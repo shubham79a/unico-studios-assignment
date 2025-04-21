@@ -17,7 +17,8 @@ const HeroSection = () => {
                     <Button onClick={() => navigate("/our-work")} variant={"outline"} className="bg-[#B886F6] rounded-full border-[#B886F6] cursor-pointer hover:scale-105 transition-all duration-600">READ MORE <span><ArrowBigRightDash /></span></Button>
                 </div>
                 <div>
-                    <p className='font-normal text-2xl'>We are team of passionate storytellers and skilled creators dedicated to producing exceptional commercial content. With a shared commitment to quality and innovation, we specialize in crafting compelling visuals that connect brands with their audiences.</p>
+                    <p className='font-normal text-2xl'>
+WE ARE TEAM OF PASSIONATE STORYTELLERS AND SKILLED CREATORS DEDICATED TO PRODUCING EXCEPTIONAL COMMERCIAL CONTENT. WITH A SHARED COMMITMENT TO QUALITY AND INNOVATION, WE SPECIALIZE IN CRAFTING COMPELLING VISUALS THAT CONNECT BRANDS WITH THEIR AUDIENCES.                    </p>
                 </div>
             </div>
         </div>
